@@ -98,7 +98,7 @@ Options parse_args(int argc, char** argv) {
       opt.help = true;
     }
   }
-
+opt.gateway = "http://192.168.50.1:8000";
   if (!opt.decision_config.empty()) {
     std::ifstream in(opt.decision_config);
     if (in) {
